@@ -13,8 +13,12 @@ const Header = () => {
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
     { path: "/courses", label: "Courses" },
+    { path: "/faculty", label: "Faculty" },
+    { path: "/admissions", label: "Admissions" },
+    { path: "/success-stories", label: "Success Stories" },
     { path: "/gallery", label: "Gallery" },
     { path: "/reviews", label: "Reviews" },
+    { path: "/faq", label: "FAQ" },
     { path: "/contact", label: "Contact" },
   ];
 
