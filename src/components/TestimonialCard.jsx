@@ -1,14 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
 
-interface TestimonialCardProps {
-  name: string;
-  role: string;
-  content: string;
-  rating: number;
-}
-
-const TestimonialCard = ({ name, role, content, rating }: TestimonialCardProps) => {
+const TestimonialCard = ({ name, role, content, rating }) => {
   return (
     <Card className="shadow-soft hover:shadow-medium transition-all duration-300">
       <CardContent className="pt-6">
