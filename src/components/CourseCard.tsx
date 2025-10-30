@@ -2,7 +2,16 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button";
 import { Clock, Users, Award } from "lucide-react";
 
-const CourseCard = ({ title, description, duration, students, level, icon }) => {
+interface CourseCardProps {
+  title: string;
+  description: string;
+  duration: string;
+  students: string;
+  level: string;
+  icon: React.ReactNode;
+}
+
+const CourseCard = ({ title, description, duration, students, level, icon }: CourseCardProps) => {
   return (
     <Card className="shadow-soft hover:shadow-medium transition-all duration-300 border-2 hover:border-primary/20">
       <CardHeader>
