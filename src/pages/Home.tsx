@@ -2,10 +2,9 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import CourseCard from "@/components/CourseCard";
 import TestimonialCard from "@/components/TestimonialCard";
 import { Button } from "@/components/ui/button";
-import { MessageSquare, Target, Users, Award, BookOpen, Sparkles } from "lucide-react";
+import { Target, Users, Award, BookOpen } from "lucide-react";
 
 const Home = () => {
   const features = [
@@ -31,24 +30,9 @@ const Home = () => {
     },
   ];
 
-  const courses = [
-    {
-      title: "Spoken English",
-      description: "Master fluent English communication for personal and professional success",
-      duration: "3 Months",
-      students: "5000+ Students",
-      level: "Beginner to Advanced",
-      icon: <MessageSquare className="h-6 w-6" />,
-    },
-    {
-      title: "Personality Development",
-      description: "Build confidence, leadership skills, and professional presence",
-      duration: "2 Months",
-      students: "3000+ Students",
-      level: "All Levels",
-      icon: <Sparkles className="h-6 w-6" />,
-    },
-  ];
+  const directorsDeskVideoUrl = "https://www.youtube.com/embed/sLMm9trcZYc";
+
+  
 
   const testimonials = [
     {
@@ -103,8 +87,42 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Courses Section */}
+        {/* Learn English + Director's Desk */}
         <section className="py-20">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+              Learn English the way never experienced before
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground leading-tight mb-3 ">
+                  Learn English the way never
+                  <br className="hidden md:block" /> experienced before
+                </h3>
+                <p className="text-base md:text-lg text-muted-foreground">
+                  Your Performance is Our Responsibility!!
+                </p>
+              </div>
+              <div>
+                <div className="text-right text-sm md:text-base font-medium text-muted-foreground mb-2">Director's desk</div>
+                <div className="rounded-2xl overflow-hidden bg-card shadow-soft">
+                  <div className="aspect-video w-full">
+                    <iframe
+                      src={directorsDeskVideoUrl}
+                      title="Director's desk video"
+                      className="w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Courses Section */}
+        {/* <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Courses</h2>
@@ -123,7 +141,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Testimonials Section */}
         <section className="py-20 bg-secondary/30">

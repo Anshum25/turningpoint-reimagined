@@ -12,7 +12,7 @@ const Header = () => {
   const navLinks = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
-    { path: "/courses", label: "Courses" },
+    // { path: "/courses", label: "Courses" },
     { path: "/faculty", label: "Faculty" },
     { path: "/admissions", label: "Admissions" },
     { path: "/success-stories", label: "Success Stories" },
@@ -24,16 +24,18 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4">
+      <div className="w-full px-4">
         <div className="flex h-16 items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
             <div className="flex items-center">
-              <div className="h-10 w-10 rounded-full gradient-hero flex items-center justify-center">
-                <span className="text-xl font-bold text-primary-foreground">TP</span>
-              </div>
+              <img
+                src="https://turningpointinstitute.in/wp-content/uploads/2022/07/cropped-cropped-cropped-Blue-Dark-Minimalist-Initial-T-Letter-Logo-512-x-512-px-1.png"
+                alt="Logo"
+                className="h-10 w-10 rounded-full object-cover"
+              />
               <div className="ml-3">
-                <h1 className="text-lg font-bold leading-tight">Excellence Institute</h1>
-                <p className="text-xs text-muted-foreground">Transform Your Future</p>
+                <h1 className="text-lg font-bold leading-tight">TURNING POINT INSTITUTE</h1>
+                <p className="text-xs text-muted-foreground">THE ONE TO TURN TO</p>
               </div>
             </div>
           </Link>
